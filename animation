@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        background: url(./quanhuang/8.jpg) no-repeat 0 0 / 100vw 100vh;
+        position: relative;
+    }
+
+    .show {
+        width: 624px;
+        height: 384px;
+        background-image: url(./quanhuang/bg.png);
+        position: absolute;
+        top: 200px;
+        left: 150px;
+        animation-name: show1, show2, show3;
+        animation-duration: .2s;
+        animation-delay: 0, .2s, .2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(3);
+    }
+
+    @keyframes show1 {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 0 1152px;
+        }
+    }
+
+    @keyframes show2 {
+        0% {
+            background-position: 624px 0;
+        }
+
+        100% {
+            background-position: 624px 1152px;
+        }
+    }
+
+    @keyframes show3 {
+        0% {
+            background-position: 1248px 0;
+        }
+
+        100% {
+            background-position: 1248px 1152px;
+        }
+    }
+
+
+    .start {
+        width: 72px;
+        height: 118px;
+        background: url(./quanhuang/start.png) 0 0;
+        animation-name: start;
+        animation-duration: .4s;
+        animation-timing-function: steps(11);
+        animation-iteration-count: infinite;
+        position: absolute;
+        bottom: 60px;
+        left: 20px;
+    }
+
+    @keyframes start {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: -792px 0;
+        }
+    }
+
+
+    .stand {
+        width: 74px;
+        height: 102px;
+        background: url(./quanhuang/stand.png) 0 0;
+        animation-name: stand;
+        animation-duration: .4s;
+        animation-timing-function: steps(8);
+        animation-iteration-count: infinite;
+        position: absolute;
+        bottom: 60px;
+        left: 180px;
+    }
+
+    @keyframes stand {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: -592px 0;
+        }
+    }
+
+    .jump {
+        width: 74px;
+        height: 190px;
+        background: url(../images/run/jump.png) 0 0;
+        animation-name: jump;
+        animation-duration: .6s;
+        animation-timing-function: steps(12);
+        animation-iteration-count: infinite;
+        position: absolute;
+        bottom: 74px;
+        left: 340px;
+    }
+
+    @keyframes jump {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: -816px 0;
+        }
+    }
+
+    .run {
+        width: 123px;
+        height: 90px;
+        background: url(../images/run/run.png) 0 0;
+        animation-name: run;
+        animation-duration: .6s;
+        animation-timing-function: steps(7);
+        animation-iteration-count: infinite;
+        position: absolute;
+        bottom: 74px;
+        left: 500px;
+    }
+
+    @keyframes run {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: -861px 0;
+        }
+    }
+</style>
+
+<body>
+    <main>
+        <div class="show">
+            <div class="start">
+
+            </div>
+            <div class="stand">
+
+            </div>
+
+            <div class="jump">
+
+            </div>
+            <div class="run">
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
